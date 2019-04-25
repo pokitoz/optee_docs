@@ -7,7 +7,7 @@ Secure storage
 Background
 **********
 Secure Storage in OP-TEE is implemented according to what has been defined in
-GloblaPlatform's :ref:`tee_internal_core_api` (here called Trusted Storage).
+GlobalPlatform's :ref:`tee_internal_core_api` (here called Trusted Storage).
 This specification mandates that it should be possible to store general-purpose
 data and key material that guarantees confidentiality and integrity of the data
 stored and the atomicity of the operations that modifies the storage (atomicity
@@ -22,7 +22,7 @@ There are currently two secure storage implementations in OP-TEE:
     
     - The second one makes use of the Replay Protected Memory Block (RPMB)
       partition of an eMMC device, and is enabled by setting ``CFG_RPMB_FS=y``.
-      It is described in [secure_storage_rpmb.md](secure_storage_rpmb.md).
+      It is described in :ref:`rpmb`.
 
 It is possible to use the normal world file systems and the RPMB implementations
 simultaneously. For this, two OP-TEE specific storage identifiers have been
